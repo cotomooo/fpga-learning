@@ -1,0 +1,63 @@
+# ===== 未完成，暂不入库（文件保留在本地） =====
+/uart/
+/mux4_1/
+
+# ===== PDS 构建中间目录（各工程 prj/ 下） =====
+**/prj/compile/
+**/prj/constraint_check/
+**/prj/device_map/
+**/prj/place_route/
+**/prj/report_timing/
+**/prj/synthesize/
+**/prj/generate_bitstream/
+**/prj/log/
+**/prj/logbackup/
+**/prj/sim/
+**/prj/source/
+**/prj/bak/
+**/prj/constraint_backup/
+**/prj/impl.tcl
+**/prj/temp_*
+
+# ===== PDS 构建产物（按扩展名兜底） =====
+*.sbit
+*.smsk
+*.sfc
+*.bgr
+*.db
+*.adf
+*.prt
+*.prr
+*.rtr
+*.snr
+*.pcf
+*.pvf
+*.dmr
+*.ccr
+*.cmr
+*.netlist
+*.vm
+*.fic
+*.wf
+*.log
+*.csv
+
+# ===== IP 生成物的额外文件 =====
+**/prj/ipcore/**/*.dat
+**/prj/ipcore/**/*.vhdl
+**/prj/ipcore/**/generate.log
+**/prj/ipcore/**/.last_generated
+**/prj/ipcore/**/.settings
+
+# ===== ModelSim 仿真中间文件 =====
+**/sim/work/
+**/sim/*.wlf
+**/sim/*.mti
+**/sim/*.mpf
+**/sim/*.cr.mti
+modelsim.ini
+
+# ===== 其他 =====
+*.bak
+Thumbs.db
+.DS_Store
